@@ -25,8 +25,7 @@
 | rust | 銹病 |
 | scab | 痂病 |
 
-我們提出 **4 種 CNN 架構 + 5 折交叉驗證 + Test-Time Augmentation (TTA)** 的集成方法，  
-在 Public Leaderboard 取得 **X.XXXX** 的 F1-score。
+提出 **4 種 CNN 架構 + 5 折交叉驗證 + Test-Time Augmentation (TTA)** 的集成方法， 
 
 ---
 
@@ -73,16 +72,16 @@ pip install -r requirements.txt
 
 ### 1. 訓練 1 折 (示範)
 ```bash
-python train_pipeline_full_upgraded.py     --fold 0     --data_dir data     --epochs 5     --batch_size 32
+train_full.py     --fold 0     --data_dir data     --epochs 5     --batch_size 32
 ```
 
 ### 2. 全 5 折 + 推論 & 產生提交檔
 ```bash
 # 5 折訓練（會自動保存 x4 models × 5 folds）
-python train_pipeline_full_upgraded.py --train_all
+train_full.py --train_all
 
 # 產生 submission_ensemble_upgraded.csv
-python train_pipeline_full_upgraded.py --inference
+train_full.py --inference
 ```
 
 > **注意**  
@@ -94,7 +93,7 @@ python train_pipeline_full_upgraded.py --inference
 ## 專案結構
 ```
 .
-├─ train_pipeline_full_upgraded.py   # 主訓練 / 推論腳本
+├─ train_full.py   # 主訓練 / 推論腳本
 ├─ requirements.txt
 ├─ README.md
 ├─ convnext_base_fold0.pth
