@@ -110,7 +110,7 @@ train_full.py --inference
 
 | 檔案 | 功能 |
 |------|------|
-| `train_pipeline_full_upgraded.py` | *核心腳本*：包含資料讀取、模型定義、訓練迴圈、TTA 集成與輸出提交檔。 |
+| `train_full.py` | *核心腳本*：包含資料讀取、模型定義、訓練迴圈、TTA 集成與輸出提交檔。 |
 | `requirements.txt`                | Python 套件版本鎖定。 |
 
 ---
