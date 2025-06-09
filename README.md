@@ -101,7 +101,7 @@ train_full.py --inference
 ├─ efficientnet_b3_fold0.pth
 ├─ resnet50_fold0.pth
 └─ reports/
-   ├─ DL_team_10.docx         # 書面報告
+   └─ DL_team_10.docx         # 書面報告
 ```
 
 ---
